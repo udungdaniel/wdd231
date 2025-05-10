@@ -1,0 +1,11 @@
+@media screen and (min-width: 600px) {
+  nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .course-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
