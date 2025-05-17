@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Blue Sky Tech",
+      "address": "123 Main St, Abuja, Nigeria",
+      "phone": "+234-703-838-0356",
+      "website": "https://blueskytech.com",
+      "image": "bluesky.png",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Green Leaf Market",
+      "address": "456 Market St, Abuja, Nigeria",
+      "phone": "+234-703-838-0356",
+      "website": "https://greenleaf.com",
+      "image": "greenleaf.png",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Sunrise Bakery",
+      "address": "789 Elm St, Abuja, Nigeria",
+      "phone": "+234-703-838-0356",
+      "website": "https://sunrisebakery.com",
+      "image": "sunrise.png",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Techie Gadgets",
+      "address": "101 Tech St, Abuja, Nigeria",
+      "phone": "+234-703-838-0356",
+      "website": "https://techiegadgets.com",
+      "image": "techie.png",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Oceanic Tours",
+      "address": "202 Beach Ave, Abuja, Nigeria",
+      "phone": "+234-703-838-0356",
+      "website": "https://oceanictours.com",
+      "image": "oceanic.png",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Redwood Clothing",
+      "address": "303 Redwood Rd, Abuja, Nigeria",
+      "phone": "+234-703-838-0356",
+      "website": "https://redwoodclothing.com",
+      "image": "redwood.png",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Healthy Greens",
+      "address": "404 Green St, Abuja, Nigeria",
+      "phone": "+234-703-838-0356",
+      "website": "https://healthygreens.com",
+      "image": "healthygreens.png",
+      "membershipLevel": 2
+    }
+  ]
+}
