@@ -1,15 +1,24 @@
+/* Base Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
   background-color: #f5f5f5;
+  line-height: 1.6;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
 header {
   background-color: #005f73;
   color: white;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 
 .header-container {
@@ -17,22 +26,23 @@ header {
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-}
-
-.branding {
-  text-align: left;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .branding h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .branding p {
   margin: 0;
   font-size: 1rem;
+}
+
+nav {
+  position: relative;
 }
 
 nav ul {
@@ -42,42 +52,23 @@ nav ul {
   gap: 1rem;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
+  padding: 0.5rem;
 }
 
-
-
-.view-buttons {
-  text-align: center;
-  margin: 1rem 0;
-}
-
-#directory.grid-view {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-}
-
-#directory.list-view {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.member-card {
-  background: white;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  text-align: center;
+nav ul li a:focus,
+nav ul li a:hover {
+  background-color: #0a9396;
+  border-radius: 4px;
 }
 
 #menu-toggle {
+  display: none;
   background-color: #005f73;
   color: white;
   border: none;
@@ -85,18 +76,40 @@ nav ul li a {
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-  }
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
 
-  #main-nav {
-    display: none;
-  }
+.hero {
+  position: relative;
+  overflow: hidden;
+}
 
-  #main-nav.active {
-    display: block;
-  }
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.call-to-action {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 95, 115, 0.7);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.view-buttons {
+  text-align: center;
+  margin: 1rem 0;
 }
 
 .view-buttons button.active {
@@ -104,9 +117,105 @@ nav ul li a {
   font-weight: bold;
 }
 
+#directory.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+#directory.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.member-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Spotlight Section */
+.spotlight-section {
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.spotlight-card {
+  display: inline-block;
+  width: 280px;
+  margin: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-card h3 {
+  margin: 0.5rem 0;
+}
+
+.spotlight-card .level {
+  font-weight: bold;
+  color: #007b5e;
+}
+
+/* Weather Section */
+.weather {
+  background-color: #e0f7fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.weather-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
 footer {
   background-color: #005f73;
   color: white;
-  padding: 0.5rem;
+  padding: 1rem;
   text-align: center;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #main-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #007d8c;
+    width: 100%;
+  }
+
+  #main-nav.active {
+    display: flex;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+}
+
+/* Accessibility Enhancements */
+a:focus {
+  outline: 3px solid #ffbf00;
+}
+
+button:focus {
+  outline: 2px solid #ffbf00;
 }

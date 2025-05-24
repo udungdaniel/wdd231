@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home page of Timbuktu Chamber of Commerce with weather and spotlights">
+  <meta name="author" content="Daniel Udung">
+  <title>Chamber Home</title>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="Timbuktu Chamber of Commerce">
+  <meta property="og:description" content="Supporting businesses and building community in Timbuktu.">
+  <meta property="og:image" content="images/social-preview.jpg">
+  <meta property="og:url" content="https://yourdomain.com/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="branding">
+        <h1>Timbuktu</h1>
+        <p>Chamber of Commerce</p>
+      </div>
+      <nav>
+        <button id="menu-toggle" aria-expanded="false">☰</button>
+        <ul id="main-nav">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Discovery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+        <img src="images/hero-small.webp" alt="View of Timbuktu" loading="lazy">
+      </picture>
+      <a href="#" class="cta">Join the Chamber</a>
+    </section>
+
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>July 15:</strong> Business Networking Lunch</li>
+        <li><strong>August 1:</strong> Chamber Annual Gala</li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <div id="current-weather">
+        <p><strong>Temperature:</strong> <span id="temp"></span></p>
+        <p><strong>Description:</strong> <span id="desc"></span></p>
+      </div>
+      <div id="forecast">
+        <h3>3-Day Forecast</h3>
+        <ul id="forecast-list"></ul>
+      </div>
+    </section>
+
+    <section class="spotlights">
+      <h2>Business Spotlights</h2>
+      <div id="spotlight-container" class="spotlight-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us at info@chamber.com | +234-703-838-0356</p>
+    <p>&copy; <span id="year"></span> Daniel Udung | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/spotlight.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+      const nav = document.getElementById("main-nav");
+      const expanded = nav.classList.toggle("show");
+      document.getElementById("menu-toggle").setAttribute("aria-expanded", expanded);
+    });
+  </script>
+</body>
+
+</html>
