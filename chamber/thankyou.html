@@ -2,15 +2,29 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You!</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
   <header>
-    <h1>Chamber of Commerce</h1>
+    <div class="header-container">
+      <div class="branding">
+        <h1>Timbuktu</h1>
+        <p>Chamber of Commerce</p>
+      </div>
+      <nav>
+        <button id="menu-toggle" aria-expanded="false">☰</button>
+        <ul id="main-nav">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html" class="active">Join</a></li>
+          <li><a href="#">Discovery</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
