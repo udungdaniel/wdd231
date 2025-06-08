@@ -1,0 +1,177 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #005f73;
+  color: white;
+  padding: 1rem 0;
+}
+
+.header-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branding h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.branding p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav ul li a:focus,
+nav ul li a:hover {
+  background-color: #0a9396;
+  border-radius: 4px;
+}
+
+#menu-toggle {
+  display: none;
+  background-color: #005f73;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #005f73;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.form-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.join-form {
+  flex: 1 1 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.3em;
+}
+
+.membership-cards {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.membership-card {
+  padding: 1em;
+  border: 1px solid #ccc;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.membership-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.membership-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.membership-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.membership-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal:target {
+  display: block;
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 2em;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #333;
+}

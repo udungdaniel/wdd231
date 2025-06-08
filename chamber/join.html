@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="branding">
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <nav>
+                <button id="menu-toggle" aria-expanded="false">☰</button>
+                <ul id="main-nav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
+                    <li><a href="#">Discovery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="form-layout">
+        <section class="join-form">
+            <h2>Join Our Chamber</h2>
+            <form method="get" action="thankyou.html">
+                <label>
+                    First Name:
+                    <input type="text" name="firstname" title="Enter your first name" autocomplete="given-name"
+                        required>
+                </label>
+
+                <label>
+                    Last Name:
+                    <input type="text" name="lastname" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+
+                <label>
+                    Organizational Title:
+                    <input type="text" name="orgtitle" title="Enter your organizational title"
+                        autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                        placeholder="example@email.com" required>
+                </label>
+
+                <label>
+                    Mobile Number:
+                    <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                </label>
+
+                <label>
+                    Business/Organization Name:
+                    <input type="text" name="organization" title="Enter your business name" autocomplete="organization"
+                        required>
+                </label>
+
+                <label>
+                    Membership Level:
+                    <select name="membership" title="Select your membership level">
+                        <option value="np">NP Membership (Free)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business Description:
+                    <textarea name="description" title="Describe your business"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Join Now">
+            </form>
+        </section>
+
+        <section class="membership-cards">
+            <div class="membership-card" id="np-card">
+                <h3>NP Membership</h3>
+                <a href="#np-modal">View Benefits</a>
+            </div>
+            <div class="membership-card" id="bronze-card">
+                <h3>Bronze Membership</h3>
+                <a href="#bronze-modal">View Benefits</a>
+            </div>
+            <div class="membership-card" id="silver-card">
+                <h3>Silver Membership</h3>
+                <a href="#silver-modal">View Benefits</a>
+            </div>
+            <div class="membership-card" id="gold-card">
+                <h3>Gold Membership</h3>
+                <a href="#gold-modal">View Benefits</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODALS -->
+    <div id="np-modal" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h3>NP Membership Benefits</h3>
+            <ul>
+                <li>No fee</li>
+                <li>Networking events</li>
+                <li>Community support</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h3>Bronze Membership Benefits</h3>
+            <ul>
+                <li>All NP benefits</li>
+                <li>Business listing</li>
+                <li>Training discounts</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="silver-modal" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h3>Silver Membership Benefits</h3>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Homepage spotlight</li>
+                <li>Promotional events</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="gold-modal" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h3>Gold Membership Benefits</h3>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Premium advertising</li>
+                <li>VIP access to events</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> Chamber of Commerce | Daniel Udung | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("timestamp").value = new Date().toISOString();
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>
