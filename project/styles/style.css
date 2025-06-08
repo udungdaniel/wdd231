@@ -1,0 +1,35 @@
+body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      margin: 2em;
+    }
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+      color: #6C5CE7; /* Purple */
+    }
+    header {
+      background-color: #6C5CE7;
+      color: #fff;
+      padding: 1em;
+    }
+    section {
+      margin-top: 2em;
+      padding: 1em;
+      border-left: 4px solid #FFE066; /* Yellow */
+      background-color: #f9f9f9;
+    }
+    footer {
+      margin-top: 3em;
+      padding: 1em;
+      border-top: 2px solid #ccc;
+    }
+    ul {
+      padding-left: 1.5em;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+    em {
+      color: #6C5CE7;
+    }
