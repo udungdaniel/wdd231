@@ -1,0 +1,15 @@
+@media (min-width: 641px) {
+  .discover-grid {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: \"sidebar cards\";
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+}

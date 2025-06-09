@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Central Park",
+        "address": "123 Park Ave, YourCity",
+        "description": "A beautiful urban park with trails and picnic spots.",
+        "image": "images/central-park.webp"
+    },
+    {
+        "name": "Local Museum",
+        "address": "456 History Rd, YourCity",
+        "description": "Learn about our area's rich cultural heritage.",
+        "image": "images/museum.webp"
+    },
+    {
+        "name": "City Library",
+        "address": "789 Knowledge St, YourCity",
+        "description": "Public library with books, events, and coworking space.",
+        "image": "images/library.webp"
+    },
+    {
+        "name": "Riverwalk",
+        "address": "101 Riverbank Ln, YourCity",
+        "description": "Scenic riverwalk with restaurants and live music.",
+        "image": "images/riverwalk.webp"
+    },
+    {
+        "name": "Botanical Garden",
+        "address": "202 Flower Ave, YourCity",
+        "description": "Botanic display of native and exotic plants.",
+        "image": "images/garden.webp"
+    },
+    {
+        "name": "Tech Innovation Hub",
+        "address": "303 Tech Blvd, YourCity",
+        "description": "Startup space fostering innovation and collaboration.",
+        "image": "images/techhub.webp"
+    },
+    {
+        "name": "Farmers Market",
+        "address": "404 Harvest Rd, YourCity",
+        "description": "Fresh produce and local crafts every weekend.",
+        "image": "images/farmersmarket.webp"
+    },
+    {
+        "name": "Art District",
+        "address": "505 Canvas Ln, YourCity",
+        "description": "Public murals and artisan shops line the street.",
+        "image": "images/artdistrict.webp"
+    }
+]
