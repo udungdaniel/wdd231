@@ -1,0 +1,184 @@
+[
+  {
+    "id": "p1",
+    "title": "Portfolio Website",
+    "description": "A responsive portfolio built with HTML, CSS, and JavaScript.",
+    "image": "images/portfolio.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/username/portfolio"
+  },
+  {
+    "id": "p2",
+    "title": "Weather App",
+    "description": "A simple weather forecast app using OpenWeather API.",
+    "image": "images/weather.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "API"
+    ],
+    "github": "https://github.com/username/weather-app"
+  },
+  {
+    "id": "p3",
+    "title": "Todo List",
+    "description": "A task tracker using local storage for persistence.",
+    "image": "images/todo.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/username/todo-list"
+  },
+  {
+    "id": "p4",
+    "title": "Quiz App",
+    "description": "Interactive quiz app using dynamic DOM manipulation.",
+    "image": "images/quiz.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/username/quiz-app"
+  },
+  {
+    "id": "p5",
+    "title": "Image Gallery",
+    "description": "Gallery with modal view and lazy loading features.",
+    "image": "images/gallery.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/username/image-gallery"
+  },
+  {
+    "id": "p6",
+    "title": "Budget Tracker",
+    "description": "Track your expenses and income using charts.",
+    "image": "images/budget.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/username/budget-tracker"
+  },
+  {
+    "id": "p7",
+    "title": "Form Validator",
+    "description": "Client-side form validation using regex.",
+    "image": "images/form.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/username/form-validator"
+  },
+  {
+    "id": "p8",
+    "title": "Typing Game",
+    "description": "Test your typing speed with this fun game.",
+    "image": "images/typing.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/username/typing-game"
+  },
+  {
+    "id": "p9",
+    "title": "Unit Converter",
+    "description": "Convert units like length, weight, and temperature.",
+    "image": "images/converter.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/username/unit-converter"
+  },
+  {
+    "id": "p10",
+    "title": "Clock App",
+    "description": "Analog and digital clock in one page.",
+    "image": "images/clock.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/username/clock-app"
+  },
+  {
+    "id": "p11",
+    "title": "Countdown Timer",
+    "description": "Set a timer and count down to your goal.",
+    "image": "images/timer.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/username/countdown-timer"
+  },
+  {
+    "id": "p12",
+    "title": "Calculator",
+    "description": "Basic calculator using JavaScript.",
+    "image": "images/calculator.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/username/calculator"
+  },
+  {
+    "id": "p13",
+    "title": "FAQ Page",
+    "description": "Accordion-based FAQ using DOM scripting.",
+    "image": "images/faq.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/username/faq-page"
+  },
+  {
+    "id": "p14",
+    "title": "Light/Dark Theme Toggle",
+    "description": "Toggle site theme using local storage.",
+    "image": "images/theme.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/username/theme-toggle"
+  },
+  {
+    "id": "p15",
+    "title": "Recipe Finder",
+    "description": "Find recipes based on ingredients using API.",
+    "image": "images/recipe.jpg",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "API"
+    ],
+    "github": "https://github.com/username/recipe-finder"
+  }
+]

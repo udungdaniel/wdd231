@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Udung">
+    <meta name="description"
+        content="Welcome to my personal portfolio website. Learn about my skills, projects, and journey as a web developer.">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Personal Portfolio | Daniel Udung">
+    <meta property="og:description" content="Explore my projects, web development skills, and contact me.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:url" content="https://udungdaniel.github.io/final/index.html">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="module" src="scripts/main.js" defer></script>
+    <title>Home | Daniel Udung Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Daniel Udung</div>
+        <button id="menu-button" aria-label="Toggle Navigation">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hello, I'm Daniel Udung</h1>
+                <p>Aspiring Frontend Developer | HTML, CSS, JavaScript Enthusiast</p>
+                <a href="projects.html" class="cta-button">See My Work</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Your Name Photo" loading="lazy" width="300" height="300" />
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>Welcome!</h2>
+            <p>This is my personal portfolio where I showcase what I've learned throughout my web development journey.
+                From building static websites to adding dynamic, interactive content with JavaScript, this site
+                highlights my progress and projects. Check out the latest in my blog below.</p>
+        </section>
+
+        <section class="blog-preview" id="blog-preview">
+            <h2>Latest Blog Updates</h2>
+            <div class="blog-container">
+                <!-- Blog entries will be injected via JS -->
+            </div>
+        </section>
+
+        <label for="theme-toggle" class="toggle-label">
+            🌞 / 🌙 Dark Mode
+            <input type="checkbox" id="theme-toggle">
+        </label>
+        <p id="greeting"></p>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Daniel Udung | WDD 231 Final Project</p>
+        <p><a href="references.html">Attributions</a> | <a href="https://youtu.be/your-demo-video" target="_blank">Video
+                Demo</a></p>
+    </footer>
+</body>
+
+</html>

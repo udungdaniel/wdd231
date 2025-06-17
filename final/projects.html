@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explore web development projects created by Daniel Udung, including interactive apps, responsive websites, and more.">
+  <meta name="author" content="Daniel Udung">
+  <meta property="og:title" content="Projects | Daniel Udung's Portfolio">
+  <meta property="og:description" content="Explore web development projects created by Daniel Udung.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://udungdaniel.github.io/finalproject/projects.html">
+  <meta property="og:image" content="images/preview.jpg">
+  <title>Projects | Daniel Udungs Portfolio</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script type="module" src="scripts/projects.js" defer></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="index.html">Daniel Udung</a></h1>
+      <button id="menu-button" aria-label="Toggle Navigation Menu">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>My Projects</h2>
+      <p>A showcase of the work I've done during and beyond this course. Click on a project to learn more.</p>
+    </section>
+
+    <section id="project-container" class="card-container">
+      <!-- JavaScript will inject project cards here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Daniel Udung. All rights reserved.</p>
+    <p><a href="reference.html">Attributions</a> | <a href="https://youtube.com/your-demo-video-link"
+        target="_blank">Demo Video</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Auto update copyright
+    document.getElementById("year").textContent = new Date().getFullYear(); 
+  </script>
+</body>
+
+</html>
