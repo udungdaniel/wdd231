@@ -6,7 +6,7 @@ const container = document.getElementById("project-container");
 // Fetch data from local JSON
 async function fetchProjects() {
   try {
-    const response = await fetch('./data/projects.json');
+    const response = await fetch('data/projects.json');
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
