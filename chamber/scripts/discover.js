@@ -16,7 +16,6 @@ fetch('data/discover.json')
         <p>${item.description}</p>
         <button>Learn More</button>
       `;
-
             container.appendChild(card);
         });
     });
